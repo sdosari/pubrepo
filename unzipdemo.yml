@@ -13,4 +13,4 @@
   - name: Extract file
     ansible.builtin.unarchive:
       src: pt.tar.gz
-      dest: /home/
+      dest: /home/s/
