@@ -6,3 +6,10 @@
  
   - name: Hello World!
     shell: echo "Hi! Tower is working."
+    
+  - name: Write backup script for each app
+    shell: |
+    echo 'line one
+    line two
+    line three' >> test.txt
+    
