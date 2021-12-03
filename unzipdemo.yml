@@ -4,8 +4,8 @@
   remote_user: s
 
   tasks:
-  - name: Extract foo.tgz into /var/lib/foo
-    ansible.builtin.unarchive:
+  tasks:
+  - name: Copy test file
+    ansible.builtin.copy:
       src: /home/s/pt.tar.gz
-      dest: /home/s/
-      
+      dest: /home/s/pt2.tar.gz
