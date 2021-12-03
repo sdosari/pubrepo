@@ -12,5 +12,6 @@
     
   - name: Extract file
     ansible.builtin.unarchive:
-      remote_src: pt.tar.gz
+      src: pt.tar.gz
       dest: /home/s/
+      remote_src: yes
