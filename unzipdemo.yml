@@ -1,11 +1,8 @@
 ---
-- name: Demo playbook
-  hosts: 192.168.100.118
-  remote_user: s
-
+- name: Hello World!
+  hosts: all
+ 
   tasks:
-  tasks:
-  - name: Copy test file
-    ansible.builtin.copy:
-      src: /home/s/pt.tar.gz
-      dest: /home/s/pt2.tar.gz
+ 
+  - name: Hello World!
+    shell: echo "Hi! Tower is working."
