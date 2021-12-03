@@ -1,6 +1,6 @@
 ---
 - name: Demo playbook
-  hosts: servers
+  hosts: 192.168.100.118
   remote_user: s
 
   tasks:
