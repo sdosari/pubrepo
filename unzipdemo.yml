@@ -10,3 +10,6 @@
   - name: Write backup script for each app
     shell: echo 'line one' >> test.txt
     
+  - name: Extract file
+    ansible.builtin.unarchive:
+      src: pt.tar.gz      
