@@ -13,7 +13,8 @@
   - name: Store file into /tmp/fetched/host.example.com/tmp/somefile
     ansible.builtin.fetch:
       src: test.txt
-      dest: /tmp/testsaeed.txt
+      dest: /tmp/
+      flat: yes
     
 #  - name: Copy compressed file
 #    ansible.builtin.copy:
