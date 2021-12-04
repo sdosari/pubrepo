@@ -10,10 +10,10 @@
   - name: Write backup script for each app
     shell: echo 'line one' >> test.txt
 
-- name: Store file into /tmp/fetched/host.example.com/tmp/somefile
-  ansible.builtin.fetch:
-    src: test.txt
-    dest: /tmp/fetched
+  - name: Store file into /tmp/fetched/host.example.com/tmp/somefile
+    ansible.builtin.fetch:
+      src: test.txt
+      dest: /tmp/fetched
     
 #  - name: Copy compressed file
 #    ansible.builtin.copy:
